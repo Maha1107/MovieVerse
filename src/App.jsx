@@ -48,10 +48,6 @@ const App = () => {
     }
 
     const data=await response.json();
-
-  
-
-
     setMovieList(data.results|| []);
     
     if(query && data.results.length > 0) {
@@ -76,8 +72,6 @@ const App = () => {
     
   } catch (error) {
     console.error(error);
-
-    
   }
  }
 
@@ -133,25 +127,9 @@ const App = () => {
             )}
      
         </section>
-        
-       
-        
-
-
-        
-
-
-
-
-
-
       </div>
 
     </main>
-  
-    
   )
 }
-
-
 export default App
